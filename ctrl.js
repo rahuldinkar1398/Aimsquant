@@ -13,10 +13,12 @@ app.controller('ctrl',function ($scope, $http) {
 
 		$scope.deltefromrecent =function(){
 			$( "input[name=recent]:checked" ).parent().parent().remove();
+			$("#dltsearch").hide();
 		}
 
 		$scope.deltefromwatch =function(){
 			$( "input[name=watch]:checked" ).parent().parent().remove();
+			$("#dltwatch").hide();
 		}
 
 		$scope.searchstock = function(){
